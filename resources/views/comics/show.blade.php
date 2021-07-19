@@ -19,10 +19,8 @@
         </div>
 
         <div class="next-prev">
-        
             <a href="{{route('comics.show', $comic->id - 1)}}">PRECEDENTE</a>
             <a href="{{route('comics.show', $comic->id + 1)}}">SUCCESSIVO</a>
-             
         </div>
        
         <div class="back-home">
