@@ -9,7 +9,13 @@ body{
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
-
+.error{
+    margin: 50px;
+    font-weight: 500;
+    h2{
+        margin-bottom: 15px;
+    }
+}
 .home-page{
     margin-top: 50px;
 }
@@ -22,6 +28,12 @@ body{
     align-items: center;
     .title-comic{
         margin:50px;
+    }
+    .next-prev{
+        margin-top: 50px;
+        a{
+            margin: 5px;
+        }
     }
     div {
         text-align: center;

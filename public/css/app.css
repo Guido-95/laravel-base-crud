@@ -9,6 +9,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.error {
+  margin: 50px;
+  font-weight: 500;
+}
+
+.error h2 {
+  margin-bottom: 15px;
+}
+
 .home-page {
   margin-top: 50px;
 }
@@ -23,6 +32,14 @@ body {
 
 .container .title-comic {
   margin: 50px;
+}
+
+.container .next-prev {
+  margin-top: 50px;
+}
+
+.container .next-prev a {
+  margin: 5px;
 }
 
 .container div {
