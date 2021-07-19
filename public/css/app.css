@@ -6,6 +6,11 @@
 
 body {
   margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-page {
+  margin-top: 50px;
 }
 
 .container {
@@ -14,6 +19,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container .title-comic {
+  margin: 50px;
+}
+
+.container div {
+  text-align: center;
+}
+
+.container div .back-home {
+  margin-top: 50px;
+}
+
+.container div h4 {
+  margin: 10px;
 }
 
 header ul {

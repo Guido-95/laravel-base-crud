@@ -18,7 +18,7 @@
                 <td>{{$comic->series}}</td>
                 <td>{{$comic->title}}</td>
                 <td>
-                    <a href="" class="btn btn-success">SHOW</a>
+                    <a href="{{route('comics.show', $comic->id)}}" class="btn btn-success">SHOW</a>
                 </td>
                 <td>EDIT</td>
                 <td>DELETE</td>
