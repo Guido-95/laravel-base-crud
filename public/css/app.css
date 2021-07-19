@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 50px;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li a {
+  margin: 15px;
+}
+
+.comics-table {
+  margin-top: 50px;
+}
+
+.comics-table thead tr th {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.comics-table tbody tr td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 50px;
+}
+
