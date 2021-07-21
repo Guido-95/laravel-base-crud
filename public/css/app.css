@@ -46,6 +46,11 @@ body {
   text-align: center;
 }
 
+.container div img {
+  border-radius: 5px;
+  border: 4px solid black;
+}
+
 .container div .back-home {
   margin-top: 50px;
 }
@@ -62,18 +67,30 @@ header ul li a {
   margin: 15px;
 }
 
+.create-edit {
+  width: 800px;
+  text-align: center;
+}
+
+.create-edit label {
+  width: 100%;
+  text-align: left;
+}
+
+.create-edit textarea {
+  height: 140px;
+}
+
 .comics-table {
   margin-top: 50px;
 }
 
 .comics-table thead tr th {
   padding: 10px;
-  border: 1px solid black;
 }
 
 .comics-table tbody tr td {
   padding: 10px;
-  border: 1px solid black;
 }
 
 .pagination {

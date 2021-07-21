@@ -2,7 +2,7 @@
 
 
 @section('main-content')
-    <table class="comics-table">
+    <table class="comics-table table table-striped">
         <thead>
             <tr>
                 <th>ID</th>
@@ -11,26 +11,34 @@
                 <th colspan="3"> Azioni </th>
             </tr>    
         </thead>
-        @foreach ($comics as $comic)
         <tbody>
+        @foreach ($comics as $item)
+        
             <tr>
-                <td>{{$comic->id}}</td>
-                <td>{{$comic->series}}</td>
-                <td>{{$comic->title}}</td>
+                <td>{{$item->id}}</td>
+                <td>{{$item->series}}</td>
+                <td>{{$item->title}}</td>
                 <td>
-                    <a href="{{route('comics.show', $comic->id)}}" class="btn btn-success">SHOW</a>
+                    <a href="{{route('comics.show', $item->id)}}" class="btn btn-success"> SHOW </a>
                 </td>
-                <td>EDIT</td>
-                <td>DELETE</td>
+                <td><a href="{{route('comics.edit', $item->id)}}"  class="btn btn-primary">EDIT</a> </td>
+                <td>
+                    <form action="{{route('comics.destroy', $item->id)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+
+                        <button onClick="return confirm('Confermi la tua scelta?');" class="btn btn-danger" type="submit">
+                            DELETE
+                        </button>
+                    </form>
+                </td>
             </tr>
-        </tbody>
+        
             
             
             {{-- @dump($comics) --}}
-
-
-        
         @endforeach
+        </tbody>
     </table>
  
     {{ $comics->links() }}
