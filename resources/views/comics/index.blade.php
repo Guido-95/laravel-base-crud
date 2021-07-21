@@ -35,8 +35,6 @@
             </tr>
         
             
-            
-            {{-- @dump($comics) --}}
         @endforeach
         </tbody>
     </table>

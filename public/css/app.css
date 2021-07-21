@@ -5,8 +5,38 @@
 }
 
 body {
-  margin-top: 50px;
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+header a {
+  margin-left: 15px;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  color: black;
 }
 
 .error {
@@ -63,10 +93,6 @@ header ul {
   list-style: none;
 }
 
-header ul li a {
-  margin: 15px;
-}
-
 .create-edit {
   width: 800px;
   text-align: center;
@@ -110,6 +136,7 @@ header ul li a {
 }
 
 footer {
+  text-align: center;
   margin-top: 50px;
 }
 

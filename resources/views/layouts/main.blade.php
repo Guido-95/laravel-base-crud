@@ -12,16 +12,16 @@
     <title>Index</title>
 </head>
 <body>
-    <div class="container">
+   
 
         
         @include('partials.header')
-        
+        <div class="container">
             <main>
                 @yield('main-content')
             </main>
-
+        </div>
         @include('partials.footer')
-    </div>
+    
 </body>
 </html>
